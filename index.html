@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <meta name="description" content="Generate keys for SC2 Mafia to get free rewards">
+    <title>SC2 Mafia Keygen</title>
+</head>
+
+<body class='flex flex-col text-white m-8'>
+    <div class="content-center mx-auto flex flex-wrap flex-row justify-center text-7xl mb-5">
+        <img class="self-center" src="assets/logo.png">
+        <div class="mt-auto mb-0 self-center">Keygen</div>
+    </div>
+
+    <div class="content-center mx-auto flex flex-wrap flex-row justify-center mt-5 max-w-full w-96">
+        <div class="mr-2 self-center">Starcraft II account handle</div>
+        <input class="bg-gray-600 pl-1 pr-1 self-center cursor-text" type="text" id="handle" placeholder="1-S2-1-1111111">
+    </div>
+    <div class="content-center mx-auto flex mt-5 max-w-full w-96">
+        <div class="mt-2">
+            <div>
+                <label class="inline-flex items-center">
+                    <input type="radio" class="form-radio" name="reward" value="0" checked>
+                    <span class="ml-2">Donor</span><span class="text-sm text-gray-400 ml-1"> $10, 5,000 points, ~490 accounts has this</span>
+                </label>
+            </div>
+            <div>
+                <label class="inline-flex items-center">
+                    <input type="radio" class="form-radio" name="reward" value="1">
+                    <span class="ml-2">Patron</span><span class="text-sm text-gray-400 ml-1"> $30, 10,000 points, ~150 accounts has this</span>
+                </label>
+            </div>
+
+            <div>
+                <label class="inline-flex items-center">
+                    <input type="radio" class="form-radio" name="reward" value="2">
+                    <span class="ml-2">Benefactor</span><span class="text-sm text-gray-400 ml-1"> $100, 20,000 points, ~60 accounts has this</span>
+                </label>
+            </div>
+
+            <div>
+                <label class="inline-flex items-center">
+                    <input type="radio" class="form-radio" name="reward" value="3">
+                    <span class="ml-2">Associate</span><span class="text-sm text-gray-400 ml-1"> no rewards available</span>
+                </label>
+            </div>
+
+            <div>
+                <label class="inline-flex items-center">
+                    <input type="radio" class="form-radio" name="reward" value="4">
+                    <span class="ml-2">Cardinal</span><span class="text-sm text-gray-400 ml-1"> $500, 40,000 points, ~5 accounts has this</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <textarea class="content-center mx-auto flex mt-5 max-w-full w-120 bg-gray-600 p-1 cursor-text" id="keyArea">Generated key will be shown here...</textarea>
+
+    <div class="content-center mx-auto max-w-prose mt-5">
+        <h3 class="text-3xl">Instruction</h3>
+        <br>
+        <ul>
+            <li>1. Start a new -Mafia- game as a save slot mode.</li>
+            <li>2. Copy and paste the generated command
+                <code>-key xxxxxxxxx</code> as a chat message.
+            </li>
+        </ul>
+        <details class="mt-2">
+            <summary class="focus:outline-white cursor-pointer">Screenshot</summary>
+            <img class="mt-2" src="./assets/screenshot.jpg" alt="In-game screenshot of entering keys">
+        </details>
+
+        
+        <br>
+        <p>Only one type of donor status can be applied.</p>
+        <p>In order to remove the donor status, delete the <code>key.SC2Bank</code> file.</p>
+        <p>Once you've done this, there is no way to tell you've actually donated or not from your banks or replays.</p>
+        <br>
+        <h3 class="text-3xl">What is this?</h3>
+        <br>
+        <p>When you donate, D.R. will send you a key that is "<em class="text-yellow-200">securely</em>" generated using <em class="text-blue-200">so-called</em> "<em class="text-green-200">RSA</em>",
+            according to a <a class="underline" rel="noreferrer noopener" target="_blank" href="https://www.sc2mafia.com/forum/showthread.php/4756-Donations?p=79269&viewfull=1#post79269">forum post</a>.</p>
+        <p>Well, it seems that it is not <span class="text-red-400 font-bold">very</span> <em class="text-yellow-200">secure</em>!</p>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
